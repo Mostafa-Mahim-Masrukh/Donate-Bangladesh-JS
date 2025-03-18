@@ -21,7 +21,7 @@
 
                 <!-- nav-bar-button start -->
                 <div class="nav-bar-start ">
-                    <a class="btn bg-lime-300 font-bold px-5">Back to Home</a>
+                    <a id="back-to-home-button" class="btn bg-lime-300 font-bold px-5">Back to Home</a>
                 </div>
                 <!-- nav-bar-button end -->
 
@@ -61,43 +61,55 @@
 
     <main>
 
-<div class="p-10">
-    <h1 class="text-xl lg:text-5xl font-bold">Important FAQ</h1>
-</div>
+        <div class="p-10">
+            <h1 class="text-xl lg:text-5xl font-bold">Important FAQ</h1>
+        </div>
 
 
         <div class="join join-vertical bg-base-100 p-10 w-full">
             <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" checked="checked" />
-              <div class="collapse-title lg:text-3xl font-bold"> What is a modal in JavaScript?</div>
-              <div class="collapse-content text-sm">A modal is a dialog box or popup that appears over a webpage, typically used for alerts, confirmations, or forms. It can be created using HTML, CSS, and JavaScript by toggling the display or visibility of a modal container.</div>
+                <input type="radio" name="my-accordion-4" checked="checked" />
+                <div class="collapse-title lg:text-3xl font-bold"> What is a modal in JavaScript?</div>
+                <div class="collapse-content text-sm">A modal is a dialog box or popup that appears over a webpage,
+                    typically used for alerts, confirmations, or forms. It can be created using HTML, CSS, and
+                    JavaScript by toggling the display or visibility of a modal container.</div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title lg:text-3xl font-bold">How do you get or set an attribute in JavaScript?</div>
-              <div class="collapse-content text-sm">You can retrieve an attribute's value from an element or modify it dynamically. This is useful for changing properties like src, alt, or custom data attributes.</div>
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title lg:text-3xl font-bold">How do you get or set an attribute in JavaScript?
+                </div>
+                <div class="collapse-content text-sm">You can retrieve an attribute's value from an element or modify it
+                    dynamically. This is useful for changing properties like src, alt, or custom data attributes.</div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title lg:text-3xl font-bold"> What is the difference between a function declaration and a function expression?</div>
-              <div class="collapse-content text-sm">A function declaration is defined with a name and can be used anywhere in the code due to hoisting. A function expression is assigned to a variable and can only be used after its definition.</div>
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title lg:text-3xl font-bold"> What is the difference between a function declaration
+                    and a function expression?</div>
+                <div class="collapse-content text-sm">A function declaration is defined with a name and can be used
+                    anywhere in the code due to hoisting. A function expression is assigned to a variable and can only
+                    be used after its definition.</div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title lg:text-3xl font-bold">How do you create and trigger a custom event in JavaScript?</div>
-              <div class="collapse-content text-sm">Custom events allow developers to define and dispatch their own events, which can be used to handle user interactions or communicate between different parts of a script.</div>
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title lg:text-3xl font-bold">How do you create and trigger a custom event in
+                    JavaScript?</div>
+                <div class="collapse-content text-sm">Custom events allow developers to define and dispatch their own
+                    events, which can be used to handle user interactions or communicate between different parts of a
+                    script.</div>
             </div>
-          </div>
-
-
-
-
-
-
+        </div>
 
     </main>
 
+    <script>
 
+        //go to the home page using window.location.href ="index.html"
+        document.getElementById('back-to-home-button').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = 'index.html';
+        })
+
+    </script>
 
 </body>
 
