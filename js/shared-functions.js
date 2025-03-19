@@ -4,6 +4,7 @@ function payment(id, myAccountFund) {
 
     let donateInputValueField = document.querySelector(id);
     let donateInputValue = parseFloat(donateInputValueField.value);
+    
 
     if (donateInputValue <= myAccountFund) {
 

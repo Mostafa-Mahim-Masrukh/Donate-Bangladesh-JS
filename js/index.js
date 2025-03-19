@@ -19,7 +19,7 @@ document.getElementById('first-Section-donate-button').addEventListener('click',
 
     //get the input value how much i want to pay (shared-function used)
     const donateInputValue = payment('.donate-input-field-first', myAccountFund);
-    // console.log(donateInputValue);
+
 
 
     //get the value of stock fund of them
