@@ -19,6 +19,7 @@ document.getElementById('first-Section-donate-button').addEventListener('click',
 
     //get the input value how much i want to pay (shared-function used)
     const donateInputValue = payment('.donate-input-field-first', myAccountFund);
+    // console.log(donateInputValue);
 
 
     //get the value of stock fund of them
@@ -34,12 +35,16 @@ document.getElementById('first-Section-donate-button').addEventListener('click',
     const newPersonalFundValue = myAccountFund - donateInputValue;
 
 
-
     //update the displayed values
     firstSectionFundTextt.innerText = newFundValue;
     myAccountFundtext.innerText = newPersonalFundValue;
 
 
+
+
+    //update the history - transaction  //shared-function
+    const cardTitle = document.getElementById('card-title-1').innerText;
+    updateThehistroy(donateInputValue, cardTitle);
 
 });
 
@@ -75,6 +80,10 @@ document.getElementById('second-Section-donate-button').addEventListener('click'
     myAccountFundtext.innerText = newPersonalFundValue;
 
 
+    //update the history - transaction  //shared-function
+    const cardTitle = document.getElementById('card-title-2').innerText;
+    updateThehistroy(donateInputValue, cardTitle);
+
 
 })
 
@@ -107,6 +116,9 @@ document.getElementById('third-Section-donate-button').addEventListener('click',
     firstSectionFundTextt.innerText = newFundValue;
     myAccountFundtext.innerText = newPersonalFundValue;
 
+    //update the history - transaction  //shared-function
+    const cardTitle = document.getElementById('card-title-3').innerText;
+    updateThehistroy(donateInputValue, cardTitle);
 
 
 })
