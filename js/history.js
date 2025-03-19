@@ -8,6 +8,11 @@ document.getElementById('toggle-button-history').addEventListener('click', funct
     document.getElementById('toggle-button-donate').classList.remove('bg-lime-300');
     document.getElementById('toggle-button-history').classList.add('bg-lime-300');
 
+
+    document.getElementById('transaction-history').classList.remove('hidden');
+    document.getElementById('card-design-container').classList.add('hidden');
+
+
 })
 
 
@@ -17,5 +22,9 @@ document.getElementById('toggle-button-donate').addEventListener('click', functi
 
     document.getElementById('toggle-button-history').classList.remove('bg-lime-300');
     document.getElementById('toggle-button-donate').classList.add('bg-lime-300');
+
+
+    document.getElementById('transaction-history').classList.add('hidden');
+    document.getElementById('card-design-container').classList.remove('hidden');
 
 })
